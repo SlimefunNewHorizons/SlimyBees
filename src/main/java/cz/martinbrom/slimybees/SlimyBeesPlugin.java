@@ -1,8 +1,12 @@
 package cz.martinbrom.slimybees;
 
 import java.io.File;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
+import java.util.Set;
+import java.util.function.Consumer;
 import java.util.logging.Logger;
 
 import javax.annotation.Nonnull;
@@ -36,6 +40,7 @@ import cz.martinbrom.slimybees.core.genetics.GenomeParser;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleRegistry;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleService;
 import cz.martinbrom.slimybees.listeners.BeeEnterListener;
+import cz.martinbrom.slimybees.listeners.PendingNestPopulatorListener;
 import cz.martinbrom.slimybees.listeners.SlimyBeesPlayerProfileListener;
 import cz.martinbrom.slimybees.listeners.TreeGrowListener;
 import cz.martinbrom.slimybees.setup.AlleleSetup;
@@ -289,28 +294,41 @@ public class SlimyBeesPlugin extends JavaPlugin implements SlimefunAddon {
         NestPopulator netherPopulator = new NestPopulator(slimyBeesRegistry, baseNestChance);
         NestPopulator endPopulator = new NestPopulator(slimyBeesRegistry, baseNestChance);
 
+        Consumer<World> populatorApplier = world -> {
+            World.Environment environment = world.getEnvironment();
+            logger.info("Registering nest populators for world: " + world.getName());
+
+            List<BlockPopulator> worldPopulators = world.getPopulators();
+            switch (environment) {
+                case NORMAL:
+                    worldPopulators.add(overworldPopulator);
+                    break;
+                case NETHER:
+                    worldPopulators.add(netherPopulator);
+                    break;
+                case THE_END:
+                    worldPopulators.add(endPopulator);
+                    break;
+            }
+        };
+
+        Set<String> pendingWorldNames = new HashSet<>();
         List<String> worldNames = config.getStringList("nests.worlds");
         for (String worldName : worldNames) {
             World world = getServer().getWorld(worldName);
             if (world != null) {
-                World.Environment environment = world.getEnvironment();
-                logger.info("Registering nest populators for world: " + worldName);
-
-                List<BlockPopulator> worldPopulators = world.getPopulators();
-                switch (environment) {
-                    case NORMAL:
-                        worldPopulators.add(overworldPopulator);
-                        break;
-                    case NETHER:
-                        worldPopulators.add(netherPopulator);
-                        break;
-                    case THE_END:
-                        worldPopulators.add(endPopulator);
-                        break;
-                }
+                populatorApplier.accept(world);
             } else {
-                logger.warning("Cannot register a nest populator for world: " + worldName + " because it doesn't exist!");
+                // the BentoBox game mode worlds are only created after every Slimefun addon has been
+                // enabled, so we wait for them instead of skipping them for the rest of the session
+                pendingWorldNames.add(worldName.toLowerCase(Locale.ROOT));
+                logger.info("World " + worldName + " does not exist yet, its nest populator will be"
+                        + " registered as soon as the world is loaded.");
             }
+        }
+
+        if (!pendingWorldNames.isEmpty()) {
+            new PendingNestPopulatorListener(this, pendingWorldNames, populatorApplier);
         }
     }
 
