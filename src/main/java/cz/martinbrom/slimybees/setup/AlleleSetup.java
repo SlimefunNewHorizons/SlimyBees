@@ -21,7 +21,7 @@ import cz.martinbrom.slimybees.core.genetics.alleles.AlleleRegistry;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleService;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleValue;
 import cz.martinbrom.slimybees.core.genetics.enums.ChromosomeType;
-import com.github.drakescraft_labs.slimefun4.utils.FireworkUtils;
+import io.github.thebusybiscuit.slimefun4.utils.FireworkUtils;
 
 public class AlleleSetup {
 

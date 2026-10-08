@@ -9,7 +9,7 @@ import org.apache.commons.lang.Validate;
 import org.bukkit.inventory.ItemStack;
 
 import cz.martinbrom.slimybees.core.recipe.GuaranteedRecipe;
-import com.github.drakescraft_labs.slimefun4.core.machines.MachineOperation;
+import io.github.thebusybiscuit.slimefun4.core.machines.MachineOperation;
 
 @ParametersAreNonnullByDefault
 public class CustomCraftingOperation implements MachineOperation {

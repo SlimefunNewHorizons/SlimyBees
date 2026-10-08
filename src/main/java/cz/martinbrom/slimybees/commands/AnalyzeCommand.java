@@ -13,7 +13,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 
 import cz.martinbrom.slimybees.core.BeeAnalysisService;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 @ParametersAreNonnullByDefault
 public class AnalyzeCommand extends AbstractCommand {

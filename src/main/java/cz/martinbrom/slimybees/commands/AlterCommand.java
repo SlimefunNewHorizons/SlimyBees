@@ -17,7 +17,7 @@ import org.bukkit.inventory.PlayerInventory;
 import cz.martinbrom.slimybees.core.genetics.BeeGeneticService;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleRegistry;
 import cz.martinbrom.slimybees.core.genetics.enums.ChromosomeType;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 @ParametersAreNonnullByDefault
 public class AlterCommand extends AbstractCommand {

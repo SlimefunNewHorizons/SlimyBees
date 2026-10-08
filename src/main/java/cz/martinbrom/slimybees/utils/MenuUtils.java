@@ -8,10 +8,10 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
 import cz.martinbrom.slimybees.utils.types.PentaPredicate;
-import com.github.drakescraft_labs.slimefun4.utils.ChestMenuUtils;
+import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ClickAction;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenuPreset;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 
 /**
  * This class contains useful function(s) for working with Block & Chest menus.

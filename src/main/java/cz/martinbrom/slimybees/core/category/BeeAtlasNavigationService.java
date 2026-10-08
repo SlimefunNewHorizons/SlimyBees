@@ -3,11 +3,11 @@ package cz.martinbrom.slimybees.core.category;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleSpecies;
-import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
-import com.github.drakescraft_labs.slimefun4.core.guide.SlimefunGuide;
-import com.github.drakescraft_labs.slimefun4.core.guide.SlimefunGuideImplementation;
-import com.github.drakescraft_labs.slimefun4.core.guide.SlimefunGuideMode;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
+import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuide;
+import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideImplementation;
+import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideMode;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 @ParametersAreNonnullByDefault
 public class BeeAtlasNavigationService {

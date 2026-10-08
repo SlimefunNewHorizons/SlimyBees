@@ -8,7 +8,7 @@ import cz.martinbrom.slimybees.Categories;
 import cz.martinbrom.slimybees.SlimyBeesPlugin;
 import cz.martinbrom.slimybees.core.category.BeeAtlasCategoryFactory;
 import cz.martinbrom.slimybees.utils.SlimyBeesHeadTexture;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 
 /**
  * This is the place where all categories from SlimyBees are registered.

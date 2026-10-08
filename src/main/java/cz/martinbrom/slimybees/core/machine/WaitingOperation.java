@@ -4,7 +4,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.apache.commons.lang.Validate;
 
-import com.github.drakescraft_labs.slimefun4.core.machines.MachineOperation;
+import io.github.thebusybiscuit.slimefun4.core.machines.MachineOperation;
 
 @ParametersAreNonnullByDefault
 public class WaitingOperation implements MachineOperation {

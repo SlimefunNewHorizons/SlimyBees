@@ -49,9 +49,9 @@ import cz.martinbrom.slimybees.setup.CategorySetup;
 import cz.martinbrom.slimybees.setup.CommandSetup;
 import cz.martinbrom.slimybees.setup.ItemSetup;
 import cz.martinbrom.slimybees.worldgen.NestPopulator;
-import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
-import com.github.drakescraft_labs.slimefun4.core.services.CustomItemDataService;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun4.core.services.CustomItemDataService;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 
 /**
  * This is the main class for the SlimyBees addon

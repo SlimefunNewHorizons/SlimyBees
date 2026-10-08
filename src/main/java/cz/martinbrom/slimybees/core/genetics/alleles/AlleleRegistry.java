@@ -21,7 +21,7 @@ import org.bukkit.Material;
 import cz.martinbrom.slimybees.core.BeeBuilder;
 import cz.martinbrom.slimybees.core.genetics.enums.ChromosomeType;
 import cz.martinbrom.slimybees.utils.StringUtils;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.collections.Pair;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 
 @ParametersAreNonnullByDefault
 public class AlleleRegistry {

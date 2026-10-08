@@ -9,8 +9,8 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import org.apache.commons.lang.Validate;
 
 import cz.martinbrom.slimybees.core.genetics.enums.ChromosomeType;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.common.CommonPatterns;
-import com.github.drakescraft_labs.slimefun4.utils.PatternUtils;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.common.CommonPatterns;
+import io.github.thebusybiscuit.slimefun4.utils.PatternUtils;
 
 @ParametersAreNonnullByDefault
 public class StringUtils {

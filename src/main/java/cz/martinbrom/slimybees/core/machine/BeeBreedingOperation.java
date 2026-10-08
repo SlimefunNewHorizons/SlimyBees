@@ -11,7 +11,7 @@ import org.bukkit.Location;
 import org.bukkit.inventory.ItemStack;
 
 import cz.martinbrom.slimybees.core.genetics.BreedingResultDTO;
-import com.github.drakescraft_labs.slimefun4.core.machines.MachineOperation;
+import io.github.thebusybiscuit.slimefun4.core.machines.MachineOperation;
 
 @ParametersAreNonnullByDefault
 public class BeeBreedingOperation implements MachineOperation {

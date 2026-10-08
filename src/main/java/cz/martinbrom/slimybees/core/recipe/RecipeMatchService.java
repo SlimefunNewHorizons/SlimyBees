@@ -10,7 +10,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import org.apache.commons.lang.Validate;
 import org.bukkit.inventory.ItemStack;
 
-import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 
 @ParametersAreNonnullByDefault
 public class RecipeMatchService {

@@ -18,7 +18,7 @@ import org.bukkit.generator.BlockPopulator;
 import cz.martinbrom.slimybees.SlimyBeesPlugin;
 import cz.martinbrom.slimybees.core.SlimyBeesRegistry;
 import cz.martinbrom.slimybees.utils.ArrayUtils;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 @ParametersAreNonnullByDefault
 public class NestPopulator extends BlockPopulator {

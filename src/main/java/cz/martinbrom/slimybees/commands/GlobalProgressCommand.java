@@ -15,7 +15,7 @@ import org.bukkit.entity.Player;
 
 import cz.martinbrom.slimybees.core.BeeDiscoveryService;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleRegistry;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 @ParametersAreNonnullByDefault
 public class GlobalProgressCommand extends AbstractCommand {

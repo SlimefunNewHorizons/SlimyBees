@@ -17,12 +17,12 @@ import cz.martinbrom.slimybees.items.machines.ElectricCentrifuge;
 import cz.martinbrom.slimybees.items.machines.HiveFrame;
 import cz.martinbrom.slimybees.items.machines.IndustrialBeeHive;
 import cz.martinbrom.slimybees.items.multiblocks.Centrifuge;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
-import com.github.drakescraft_labs.slimefun4.implementation.items.VanillaItem;
-import com.github.drakescraft_labs.slimefun4.implementation.items.blocks.UnplaceableBlock;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.implementation.items.VanillaItem;
+import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock;
 
 /**
  * This is the place where all items from SlimyBees are registered.

@@ -6,7 +6,7 @@ import org.apache.commons.lang.Validate;
 
 import cz.martinbrom.slimybees.core.genetics.BreedingModifierDTO;
 import cz.martinbrom.slimybees.core.genetics.Genome;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 
 @ParametersAreNonnullByDefault
 public class BeeLifespanService {
