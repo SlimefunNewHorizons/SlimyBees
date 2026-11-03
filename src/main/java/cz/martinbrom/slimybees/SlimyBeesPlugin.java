@@ -150,7 +150,7 @@ public class SlimyBeesPlugin extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/DrakesCraft-Labs/SlimyBees/issues";
+        return "https://github.com/SlimefunNewHorizons/SlimyBees/issues";
     }
 
     @Nonnull
